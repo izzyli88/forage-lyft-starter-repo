@@ -1,10 +1,10 @@
-from Phase2_Refactoring.Engine.CapuletEngine import CapuletEngine
-from Phase2_Refactoring.Engine.SternmanEngine import SternmanEngine
-from Phase2_Refactoring.Engine.WilloughbyEngine import WilloughbyEngine
+from Engine.CapuletEngine import CapuletEngine
+from Engine.SternmanEngine import SternmanEngine
+from Engine.WilloughbyEngine import WilloughbyEngine
 
-from Phase2_Refactoring.Battery.SpindlerBattery import SpindlerBattery
-from Phase2_Refactoring.Battery.NubbinBattery import NubbinBattery
-from Phase2_Refactoring.Car import Car
+from Battery.SpindlerBattery import SpindlerBattery
+from Battery.NubbinBattery import NubbinBattery
+from Car import Car
 
 
 class CarFactory:

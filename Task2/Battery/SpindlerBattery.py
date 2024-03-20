@@ -1,7 +1,7 @@
-from Battery import Battery
+from Battery.Battery import Battery
 
-class NubbinBattery(Battery):
-    SERVICE_DURATION = 4
+class SpindlerBattery(Battery):
+    SERVICE_DURATION = 2
 
     def __init__(self, last_service_date, current_date):
         super().__init__()
@@ -10,4 +10,4 @@ class NubbinBattery(Battery):
 
     def needs_service(self):
         years_passed = (self.current_date - self.last_service_date) / 365.25
-        return years_passed >= NubbinBattery.SERVICE_DURATION
+        return years_passed >= SpindlerBattery.SERVICE_DURATION
